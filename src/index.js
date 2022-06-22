@@ -6,7 +6,9 @@ import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
   uri: "https://server-catstronaunts.herokuapp.com/", // change to YOUR own production server
-  cache: new InMemoryCache()
+  cache: new InMemoryCache(),
+  name: "web",
+  version: "1.0",
 });
 
 ReactDOM.render(
